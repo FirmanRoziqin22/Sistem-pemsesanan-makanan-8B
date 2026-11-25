@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Teknofood</title>
+    <link rel="stylesheet" href="pesanan.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul class="ui">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projek.html">Menu</a></li>
+            <li><a href="Informasi pweb.html">Tentang Kami</a></li>
+            <li><a href="umpan-balik.html">Umpan Balik</a></li>
+        </ul>
+    </nav>
+
+    <!-- Halaman Detail Pesanan -->
+    <div class="halaman-pesanan">
+
+        <h1>DETAIL PESANAN</h1>
+
+        <p>Berikut adalah daftar makanan yang kamu pesan.</p>
+
+        <!-- Tabel Pesanan -->
+        <table class="tabel-pesanan">
+
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Makanan</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+
+            <tbody id="hasil-pesanan">
+                <!-- Data pesanan ditampilkan melalui JavaScript -->
+            </tbody>
+
+        </table>
+
+        <!-- Total Pembayaran -->
+        <div class="total">
+            <h2 id="total-pembayaran">
+                Total Pembayaran: Rp 0
+            </h2>
+        </div>
+
+        <!-- Tombol -->
+        <div class="tombol-pesanan">
+
+            <button onclick="window.location.href='projek.html'">
+                Kembali ke Menu
+            </button>
+
+            <button onclick="hapusSemuaPesanan()">
+                Batalkan Pesanan
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="pesanan.js"></script>
+
+</body>
+</html>
