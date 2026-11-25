@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoFOOD - Login & Pesan Makanan</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Selamat Datang<br>di TecnoFOOD</h1>
+            <p>Login ke akunmu, lalu pesan makanan favoritmu dengan mudah.</p>
+        </section>
+
+        <section class="card-login">
+            <h2>Login</h2>
+            <p class="subtitle">Masuk ke akun TecnoFOOD.</p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="identitas">Email atau No. HP</label>
+                    <input type="text" id="identitas" name="identitas"
+                    placeholder="Masukkan email atau nomor HP">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Masukkan password">
+                </div>
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="ingat"> Ingat saya
+                    </label>
+                    <a href="lupa-password.html" class="forgot-pass">Lupa password?</a>
+                </div>
+
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+
+            <p class="register-link">
+                Belum punya akun? 
+                <a href="daftarakun.html">Daftar di sini</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="brand-logo">TecnoFOOD</div>
+                <div class="brand-tagline">Makan sebelum ngoding</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

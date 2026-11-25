@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6H6SooNQ6Xj8qntLl7oVZTlutiH9_fNRq68QB2tkqTOAP50c8I8rkSaK&s=10') center center / cover no-repeat fixed;
+    color: #FFFFFF;
+}
+
+body h1, body h2, body h3,
+body p, body span, body a, body label {
+    color: #FFFFFF;
+}
+
+.navbar, .feature-card {
+    background: #fff;
+}
+
+.navbar {
+    padding: 15px 0;
+    border-bottom: 1px solid #E8D6D2;
+}
+
+.nav-container, .main-container, .footer-content, .copyright {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo, .brand-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.hero-banner {
+    background: linear-gradient(#593D3DB8, #593D3DB8),
+    url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb, .brand-tagline, .copyright {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.main-container {
+    padding: 40px 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.about-image, .about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-text h2, .about-text p {
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.features-section {
+    display: flex;
+    gap: 13px;
+    padding: 12px;
+    background: #593D3D;
+    border-radius: 12px;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 15px 8px;
+    text-align: center;
+    border-radius: 10px;
+    background: #795858;
+}
+
+.feature-card p {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+footer {
+    background: #593D3D;
+    color: #fff;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    color: #FFFFFF;
+}
+
+.copyright {
+    border-top: 1px solid #795858;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.salam-teks {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.jam-teks {
+    margin: 4px 0;
+}
+
+.status-buka {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status-buka.buka {
+    background: #2e9e4f;
+}
+
+.status-buka.tutup {
+    background: #d63a3a;
+}
+
+@media (max-width: 768px) {
+    .about-section, .features-section {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+}
+
+/* Navigasi */
+.navbar {
+    background: #593D3D;
+    padding: 15px 0;
+    border-bottom: 1px solid #795858;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu Navigasi */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #D6B5A5;
+}
+
+/* Navigasi HP */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
