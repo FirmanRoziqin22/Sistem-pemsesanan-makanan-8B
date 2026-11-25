@@ -1,0 +1,155 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6H6SooNQ6Xj8qntLl7oVZTlutiH9_fNRq68QB2tkqTOAP50c8I8rkSaK&s=10);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #453a34;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+nav {
+    background-color: #593f3d;
+    padding: 15px;
+    margin: 0;
+}
+.logo {
+    color: white;
+}
+.ui {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #d6b5a5;
+}
+
+.tulisan-menu {
+    width: 100%;
+    background-image: linear-gradient(rgba(69, 58, 52, 0.65), rgba(69, 58, 52, 0.65)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ZvwCcNI_e--fAXESqbsHFE6My69QekHm8d3srVp--mZwM01N-2QGdNg&s=10);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 500px));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.makanan {
+    width: 100%;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f4ede5;
+    border: 1px solid #e0d2c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbb9a8;
+    border-radius: 8px;
+    background-color: #fffaf6;
+    color: #453a34;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #a1887f;
+    border-color: #795548;
+}
+
+.petunjuk {
+    color: #75665d;
+    font-size: 12px;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #795548;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #5d4037;
+}
+
+.pesan-sukses {
+    color: #4f6b45;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tombol-kembali {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background-color: #4a3b32;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tombol-kembali:hover {
+    background-color: #8b5e3c;
+    transform: translateX(-4px);
+}
+
+.tombol-kembali:active {
+    transform: translateX(-4px) scale(0.97);
+}
