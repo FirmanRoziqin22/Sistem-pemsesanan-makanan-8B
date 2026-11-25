@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoFOOD - Daftar Akun</title>
+    <link rel="stylesheet" href="daftarakun.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Gabung<br>di TecnoFOOD</h1>
+            <p>Buat akunmu sekarang, lalu pesan makanan favoritmu dengan mudah.</p>
+        </section>
+
+        <section class="card-login">
+            <h2>Daftar Akun</h2>
+            <p class="subtitle">Isi data berikut untuk membuat akun.</p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+                </div>
+
+                <div class="form-group">
+                    <label for="identitas">Email atau No. HP</label>
+                    <input type="text" id="identitas" name="identitas" placeholder="Masukkan email atau nomor HP">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Minimal 6 karakter">
+                </div>
+
+                <div class="form-group">
+                    <label for="konfirmasi">Konfirmasi password</label>
+                    <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Ulangi password">
+                </div>
+
+                <div class="form-group">
+                    <label for="tgl-lahir">Tanggal lahir</label>
+                    <input type="date" id="tgl-lahir" name="tgl_lahir">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis kelamin</label>
+                    <div class="radio-group">
+                        <label><input type="radio" id="kelamin" name="kelamin" value="Laki-laki"> Laki-laki</label>
+                        <label><input type="radio" name="kelamin" value="Perempuan"> Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="remember-me">
+                        <input type="checkbox" id="setuju" name="setuju"> Saya setuju dengan syarat & ketentuan
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-login">Daftar</button>
+            </form>
+
+            <p class="register-link">
+                Sudah punya akun? <a href="login.html">Login di sini</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="brand-logo">TecnoFOOD</div>
+                <div class="brand-tagline">Makan sebelum ngoding</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="daftarakun.js"></script>
+</body>
+</html>
