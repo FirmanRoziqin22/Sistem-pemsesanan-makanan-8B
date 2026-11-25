@@ -1,0 +1,130 @@
+body {
+    background-color: #fffaf6;
+    font-family: Arial, sans-serif;
+    color: #453a34;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6H6SooNQ6Xj8qntLl7oVZTlutiH9_fNRq68QB2tkqTOAP50c8I8rkSaK&s=10);
+}
+
+/* Navigasi */
+nav {
+    background-color: #453a34;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.ui {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Kotak pesanan */
+.halaman-pesanan {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5e6d8;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+/* Judul */
+.halaman-pesanan h1 {
+    text-align: center;
+    color: #3e2723;
+    font-size: 28px;
+}
+
+/* Tulisan */
+.halaman-pesanan p {
+    color: #3e2723;
+}
+
+/* Tabel */
+.tabel-pesanan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fffaf5;
+}
+
+.tabel-pesanan th {
+    background-color: #805747;
+    color: white;
+    padding: 15px;
+}
+
+.tabel-pesanan td {
+    background-color: #fffaf5;
+    color: #333;
+    border: 1px solid #d6c2b5;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Total pembayaran */
+#total-pembayaran {
+    color: #805747;
+    text-align: right;
+    margin-top: 25px;
+}
+
+/* Tombol */
+.halaman-pesanan button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #805747;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tombol-pesanan {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.tabel-pesanan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabel-pesanan th {
+    background-color: #805747;
+    color: white;
+    padding: 12px;
+}
+
+.tabel-pesanan td {
+    background-color: #fffaf5;
+    color: #333;
+    border: 1px solid #d6c2b5;
+    padding: 12px;
+    text-align: center;
+}
+
+.tombol-pesanan button {
+    width: 100%;
+    padding: 15px;
+    background-color: #805747;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
