@@ -1,0 +1,74 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const hero = document.querySelector(".hero");
+    const card = document.querySelector(".card-login");
+    const container = document.querySelector(".container");
+    form.noValidate = true;
+
+    const $ = id => document.getElementById(id);
+    const grup = id => $(id).closest(".form-group");
+    const esc = s => Object.assign(document.createElement("div"), { textContent: s }).innerHTML;
+
+    const hapusError = g => {
+        g.querySelector(".error-msg")?.remove();
+        g.querySelector("input").classList.remove("invalid");
+    };
+    const tampilError = (g, pesan) => {
+        g.querySelector("input").classList.add("invalid");
+        g.insertAdjacentHTML("beforeend", `<small class="error-msg">${pesan}</small>`);
+    };
+
+    form.addEventListener("input", e => {
+        const g = e.target.closest(".form-group");
+        if (g) hapusError(g);
+    });
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        const v = {
+            nama: $("nama").value.trim(),
+            identitas: $("identitas").value.trim(),
+            password: $("password").value,
+            konfirmasi: $("konfirmasi").value,
+            tgl: $("tgl-lahir").value,
+            kelamin: form.kelamin.value
+        };
+
+        const cek = {
+            nama: !v.nama && "Nama tidak boleh kosong.",
+            identitas: !v.identitas
+                ? "Email atau No. HP tidak boleh kosong."
+                : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.identitas) && !/^(\+62|62|0)8[0-9]{8,11}$/.test(v.identitas)
+                    && "Masukkan email atau nomor HP yang valid.",
+            password: !v.password
+                ? "Password tidak boleh kosong."
+                : v.password.length < 6 && "Password minimal 6 karakter.",
+            konfirmasi: v.konfirmasi !== v.password && "Konfirmasi password tidak sama.",
+            "tgl-lahir": !v.tgl
+                ? "Tanggal lahir tidak boleh kosong."
+                : new Date(v.tgl) > new Date() && "Tanggal lahir tidak boleh di masa depan.",
+            kelamin: !v.kelamin && "Pilih jenis kelamin.",
+            setuju: !$("setuju").checked && "Kamu harus menyetujui syarat & ketentuan."
+        };
+
+        let valid = true;
+        for (const [id, pesan] of Object.entries(cek)) {
+            hapusError(grup(id));
+            if (pesan) { tampilError(grup(id), pesan); valid = false; }
+        }
+        if (!valid) return;
+
+        card.style.display = "none";
+        hero.innerHTML = `<h1>Selamat, ${esc(v.nama)}!</h1>
+            <p>Akunmu berhasil dibuat. Sekarang kamu siap memesan makanan favorit di TecnoFOOD.</p>`;
+
+        const hasil = document.createElement("section");
+        hasil.className = "card-login";
+        hasil.innerHTML = `<h2>Pendaftaran Berhasil</h2>
+            <p class="subtitle">Akun dengan ${esc(v.identitas)} sudah terdaftar.</p>
+            <a href="login.html" class="btn-login" style="display:block;text-align:center;text-decoration:none">Lanjut ke Login</a>`;
+        container.appendChild(hasil);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
