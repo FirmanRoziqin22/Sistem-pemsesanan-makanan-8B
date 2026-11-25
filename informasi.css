@@ -163,7 +163,6 @@ footer {
     }
 }
 
-/* Navigasi */
 .navbar {
     background: #593D3D;
     padding: 15px 0;
@@ -179,14 +178,12 @@ footer {
     align-items: center;
 }
 
-/* Logo */
 .logo {
     font-size: 23px;
     font-weight: bold;
     color: white;
 }
 
-/* Menu Navigasi */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -205,7 +202,6 @@ footer {
     color: #D6B5A5;
 }
 
-/* Navigasi HP */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
